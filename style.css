@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  width: 500px;
+  height: 500px;
+}
+
+.pixel {
+  background: #777;
+}
+
