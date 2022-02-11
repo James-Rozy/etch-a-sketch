@@ -35,27 +35,31 @@ h1 {
 }
 
 p,
-#size,
 button {
   font-size: 18px;
   font-weight: 500;
 }
 
+button {
+  color: #424949
+}
+
+#sizeTxt {
+  font-size: 24px;
+  font-weight: 700;
+  color: #eee;
+}
+
 .grid {
   background-color: #eee;
   display: grid;
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 800px;
   box-shadow: 0px 5px 10px #424949;
 }
 
 .pixel {
   user-select: none;
-}
-
-button,
-#size {
-  color: #424949
 }
 
 .controls {
@@ -101,7 +105,7 @@ input[type='range'] {
 
 input[type="range"]::-webkit-slider-runnable-track {
   height: 20px;
-  border: 2px solid #424949;
+  border: none;
   border-radius: 25px;
   background-color: #eee;
   box-shadow: 0px 5px 10px #424949;
@@ -111,7 +115,28 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 30px;
   width: 30px;
-  margin-top: -7px;
+  margin-top: -5px;
   border-radius: 25px;
   background-color: #424949;
+  box-shadow: 0px 5px 10px #424949;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  align-items: center;
+  justify-content: space-around;
+  text-shadow: 0px 5px 10px #424949;
+}
+
+.reset {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 5px 10px #424949;
 }

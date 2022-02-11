@@ -8,7 +8,7 @@ const grid = document.querySelector(".grid");
 const btnReset = document.querySelector(".reset");
 const inpColor = document.querySelector("#color");
 const inpSlider = document.querySelector("#sizeSlider");
-const txtSize = document.querySelector("#size");
+const txtSize = document.querySelector("#sizeTxt");
 
 btnReset.onclick = () => newGrid();
 inpColor.onchange = (e) => setColor(e.target.value);
@@ -53,7 +53,7 @@ let setColor = (color) => {
 } 
 
 let setSlideSize = (size) => {
-  txtSize.textContent = size + "X" + size;
+  txtSize.textContent = size + " X " + size;
 }
 
 let setSize = (size) => {
