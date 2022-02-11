@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #eee;
+  background-color: #E57373;
   font-family: "Roboto", sans-serif;
-  color: #424949;
+  color: #FFCC66;
 }
 
 .container {
@@ -25,26 +25,93 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  text-shadow: 0px 5px 10px #424949;
 }
 
 h1 {
-  font-size: 42px;
-  font-weight: 900;
+  font-family: 'Lobster', cursive;
+  font-size: 64px;
+  font-weight: 400;
 }
 
-p {
+p,
+#size,
+button {
   font-size: 18px;
   font-weight: 500;
 }
 
 .grid {
+  background-color: #eee;
   display: grid;
   width: 500px;
   height: 500px;
-  /*border: 4px solid #424949;*/
   box-shadow: 0px 5px 10px #424949;
 }
 
 .pixel {
   user-select: none;
+}
+
+button,
+#size {
+  color: #424949
+}
+
+.controls {
+  display: flex;
+  min-width: 500px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+input[type='range']::-webkit-slider-thumb:hover,
+input[type='color']:hover,
+button:hover {
+  transform: scale(1.1);
+}
+
+input[type='color']:active {
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
+}
+
+input[type='color'] {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: #E57373;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 5px 10px #424949;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  background-color: #E57373;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 20px;
+  border: 2px solid #424949;
+  border-radius: 25px;
+  background-color: #eee;
+  box-shadow: 0px 5px 10px #424949;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  margin-top: -7px;
+  border-radius: 25px;
+  background-color: #424949;
 }

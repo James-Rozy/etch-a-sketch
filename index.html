@@ -11,10 +11,23 @@
   <body>
     <div class="container">
       <div class="header">
-        <h1>ETCH-A-SKETCH</h1>
+        <h1>Etch-A-Sketch</h1>
       </div>
       <div class="grid"></div>
-      <div class="controls"></div>
+      <div class="controls">
+        <button class="reset">Reset Grid</button>
+        <input type="color" name="pen" id="color" value="#424949" />
+        <label for="sizeSlider" id="size">16 X 16</label>
+        <input
+          type="range"
+          name="sizeSlider"
+          id="sizeSlider"
+          min="16"
+          max="64"
+          value="16"
+          step="1"
+        />
+      </div>
       <div class="footer">
         <p>James Rozsypal &copy 2022</p>
       </div>
