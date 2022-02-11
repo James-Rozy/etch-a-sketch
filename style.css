@@ -53,8 +53,8 @@ button {
 .grid {
   background-color: #eee;
   display: grid;
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   box-shadow: 0px 5px 10px #424949;
 }
 
