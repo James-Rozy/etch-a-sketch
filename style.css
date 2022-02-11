@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #E57373;
+  background-color: #e57373;
   font-family: "Roboto", sans-serif;
-  color: #FFCC66;
+  color: #ffcc66;
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 64px;
   font-weight: 400;
 }
@@ -41,7 +41,7 @@ button {
 }
 
 button {
-  color: #424949
+  color: #424949;
 }
 
 #sizeTxt {
@@ -66,41 +66,41 @@ button {
   display: flex;
   min-width: 500px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-input[type='range']::-webkit-slider-thumb:hover,
-input[type='color']:hover,
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="color"]:hover,
 button:hover {
   transform: scale(1.1);
 }
 
-input[type='color']:active {
+input[type="color"]:active {
   transition: transform 0.05s ease-in-out;
   transform: scale(1);
 }
 
-input[type='color'] {
+input[type="color"] {
   -webkit-appearance: none;
   width: 100px;
   height: 100px;
   border: none;
-  background-color: #E57373;
+  background-color: #e57373;
 }
 
-input[type='color']::-webkit-color-swatch-wrapper {
+input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-input[type='color']::-webkit-color-swatch {
+input[type="color"]::-webkit-color-swatch {
   border: none;
   border-radius: 50px;
   box-shadow: 0px 5px 10px #424949;
 }
 
-input[type='range'] {
+input[type="range"] {
   -webkit-appearance: none;
-  background-color: #E57373;
+  background-color: #e57373;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
@@ -124,13 +124,12 @@ input[type="range"]::-webkit-slider-thumb {
 .size {
   display: flex;
   flex-direction: column;
-  min-height: 100px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   text-shadow: 0px 5px 10px #424949;
 }
 
-.reset {
+button {
   width: 100px;
   height: 100px;
   background-color: #eee;

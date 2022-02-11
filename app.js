@@ -6,11 +6,13 @@ let gridSize = DEFAULT_GRID;
 
 const grid = document.querySelector(".grid");
 const btnReset = document.querySelector(".reset");
+const btnEraser = document.querySelector(".eraser")
 const inpColor = document.querySelector("#color");
 const inpSlider = document.querySelector("#sizeSlider");
 const txtSize = document.querySelector("#sizeTxt");
 
 btnReset.onclick = () => newGrid();
+btnEraser.onclick = () => setColor("#eeeeee");
 inpColor.onchange = (e) => setColor(e.target.value);
 inpSlider.onmousemove = (e) => setSlideSize(e.target.value);
 inpSlider.onchange = (e) => setSize(e.target.value);
@@ -50,17 +52,17 @@ let newGrid = () => {
 
 let setColor = (color) => {
   penColor = color;
-} 
+};
 
 let setSlideSize = (size) => {
   txtSize.textContent = size + " X " + size;
-}
+};
 
 let setSize = (size) => {
   gridSize = size;
   setSlideSize(size);
   newGrid();
-}
+};
 
 window.onload = () => {
   getGrid(DEFAULT_GRID);
